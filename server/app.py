@@ -25,6 +25,7 @@ def caption_image():
         POST request that takes in an image and returns a caption
     """
     image = request.get_json()['image']
+    return json.dumps({ "status": 200, "msg": "image received"})
 
 
 if __name__ == '__main__':
