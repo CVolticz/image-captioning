@@ -20,7 +20,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip setuptools wheel
-          if [ -f ../../server/requirements.txt ]; then pip install -r ../../server/requirements.txt; fi
+          if [ -f server/requirements.txt ]; then pip install -r server/requirements.txt; fi
       - name: Test with python script
         run: |
           python server/tests/tests.py
