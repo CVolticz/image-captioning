@@ -23,7 +23,7 @@ jobs:
           if [ -f ../../server/requirements.txt ]; then pip install -r ../../server/requirements.txt; fi
       - name: Test with python script
         run: |
-          python ../../server/tests/tests.py
+          python server/tests/tests.py
       - name: Upload pytest test results
         uses: actions/upload-artifact@v3
         with: 
